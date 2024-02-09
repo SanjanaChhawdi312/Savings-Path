@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 Sep, 2023, 12:55:38 AM
+    Author     : Dell
+*/
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding: 20px;
+    background:linear-gradient(90deg,#25274d,#464866);
+}
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    background-size: 200% 200%;
+}
+.wrapper {
+    justify-content: space-between;
+    width: 70%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-image:linear-gradient(rgba(0,100,155,0.1),rgba(0,100,155,0.3));
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+}
+
+.column {
+    flex: 0 0 calc(20% - 10px);
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],input[type="email"],input[type="password"],select,input[type="date"]  {
+     padding: 10px 20px;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: white;
+    position: relative;
+    margin-top: 20px;
+}
+
+input[type="text"],input[type="email"],input[type="password"],select,input[type="date"]:focus {
+    border: 3px solid #555;
+}
+
+input[type="text"],input[type="email"],input[type="password"],select,input[type="date"]:hover {
+    width: 71%;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #555;
+    border-radius: 5px;
+}
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+input[type="date"] {
+    width: 71%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #555;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+    cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none; 
+}
+
+button {
+    font-size: 28px;
+    padding: 17px;
+    width: 80%;
+    border-radius: 1em;
+    border: 3px;
+    color: #fff;
+    background:linear-gradient(90deg,#25274d,#464866);
+    cursor: pointer;
+    transition: box-shadow 0.3s, font-weight 0.3s;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+}
